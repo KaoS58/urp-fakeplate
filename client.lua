@@ -1,3 +1,5 @@
+--[Calling on resources for script to run -K]
+
 local vehicle = {}
 local vehPlate = {}
 local vehModel = {}
@@ -16,14 +18,17 @@ Citizen.CreateThread(function()
   end
 end)
 
+--[Proper Scripting here HACKERMANS -K]
 RegisterNetEvent('changePlateFake')
 AddEventHandler('changePlateFake', function()
+  if   --If the player has the fake plate in pockets, run the event, if not then pring error
 	startchangePlateFake()
-	Citizen.Trace("1")
+	TriggerClientEvent('DoLongHudText', _source, 'You have began to change the plates on this vehicle!', 2)
 end)
 
+-- End of event where player gets the old plate
 RegisterNetEvent('changePlateFakeHud')
 AddEventHandler('changePlateFakeHud', function()
-	startGolfHud()
-	Citizen.Trace("HUD started")
+	TriggerClientEvent('DoLongHudText', _source, 'You have sucessfully changed the plates on this vehicle!', 2)
+  TriggerClientEvent('DoLongHudText', _source, 'You have recieved the old plates of the car!', 2)
 end)

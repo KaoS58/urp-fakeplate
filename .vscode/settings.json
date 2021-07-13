@@ -1,0 +1,16 @@
+{
+    "Lua.diagnostics.globals": [
+        "source",
+        "TriggerClientEvent",
+        "AddEventHandler",
+        "RegisterServerEvent",
+        "PlayerPedId",
+        "GetEntityCoords",
+        "IsPedInAnyVehicle",
+        "Citizen",
+        "RegisterNetEvent",
+        "startchangePlateFake",
+        "_source",
+        "Wait"
+    ]
+}
