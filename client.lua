@@ -1,5 +1,6 @@
 local cunt = {"A", "B", "C", "D", "E", "F", "D", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z",}
-RegisterCommand('t', function(source)
+
+-- RegisterCommand('t', function(source) (Do we need this if its running through 3rd eye?)
     if exports['urp-inventory']:hasEnoughOfItem('fakeplate', 1) then
         TriggerServerEvent('unity:plate-read-up')
     end
@@ -8,7 +9,7 @@ end)
 RegisterNetEvent('unity:generate-fakeplate')
 AddEventHandler('unity:generate-fakeplate', function()
     local information = {
-        ["plate"] = cunt[math.random(1, 4)] .. '' .. math.random(1111111, 9999999)
+        ["plate"] = cunt[math.random(1, 26)] .. '' .. math.random(, )
     }
     TriggerEvent("player:receiveItem","fakeplate",1,false,information)
 end)
