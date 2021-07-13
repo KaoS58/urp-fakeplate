@@ -1,3 +1,5 @@
+-- Coords for plate making shit + Ped Manager info
+
 RegisterServerEvent('urp-fakeplate:giveloadout')
 AddEventHandler('urp-fakeplate:giveloadout', function()
     TriggerClientEvent('player:removeItem', source, 'fakeplate', 1)
