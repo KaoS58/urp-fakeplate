@@ -11,6 +11,15 @@
         "RegisterNetEvent",
         "startchangePlateFake",
         "_source",
-        "Wait"
+        "Wait",
+        "SetVehicleNumberPlateText",
+        "TriggerEvent",
+        "GetVehiclePedIsIn",
+        "exports",
+        "TriggerServerEvent",
+        "end",
+        "json",
+        "client_script",
+        "server_script"
     ]
 }

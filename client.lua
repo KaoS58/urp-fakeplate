@@ -3,7 +3,6 @@ local cunt = {"A", "B", "C", "D", "E", "F", "D", "H", "I", "J", "K", "L", "M", "
     if exports['urp-inventory']:hasEnoughOfItem('fakeplate', 1) then
         TriggerServerEvent('unity:plate-read-up')
     end
-end)
 
 RegisterNetEvent('unity:generate-fakeplate')
 AddEventHandler('unity:generate-fakeplate', function()
